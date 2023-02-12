@@ -268,16 +268,19 @@ def main():
                 break   
             else:
                 row_index=0
-                while True:
-                    print(df.iloc[row_index:row_index+5])
-                    row_index+=5
-                    view_data=input('would you like to view the next 5 rows of raw data?')
-                    if view_data!='yes':
-                        view_details_resultset=False
-                        break
+                View_rows(df, row_index)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+            break
+
+def View_rows(df, row_index):
+    while True:
+        print(df.iloc[row_index:row_index+5])
+        row_index+=5
+        view_data=input('would you like to view the next 5 rows of raw data?')
+        if view_data!='yes':
+            view_details_resultset=False
             break
 
 
