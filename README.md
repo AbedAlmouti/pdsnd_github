@@ -17,4 +17,9 @@ In this project, you will make use of Python to explore data related to bike sha
 * Source File : bikeshare.py
 * Programming Lanaguge : Python
 
+### Dependencies
+
+* Python core libraries, Panads, Numpy.
+* OS like Windows, Mac, Unix 
+
 
