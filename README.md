@@ -34,3 +34,12 @@ Any advise for common problems or issues.
 message through Github https://github.com/AbedAlmouti
 ```
 
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under the [Udacity-Programming for Data Science with Python] License
+
