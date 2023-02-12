@@ -29,30 +29,34 @@ def get_filters():
     try:
         print('Hello! Let\'s explore some US bikeshare data!')
         # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-        while True:
-            print()
-            city=input('Enter exactly city from the following [chicago, new york city, washington] :\n').lower()
-            if city in valid_user_input['city']:
-                break
-    
-         # get user input for month (all, january, february, ... , june)
-        while True:
-             print()
-             month=input('In which month do you want to analyse data [all, january, february,  march, april ,may, june] :\n').lower()
-             if month in valid_user_input['month']:
-                 break
-    
-         # get user input for day of week (all, monday, tuesday, ... sunday)
-        while True:
-            print()
-            day=input('In which day of week do you want to analyse data [all, monday, tuesday, wednesday,thursday,friday,saturday,sunday]\n').lower()
-            if day in valid_user_input['day']:
-                break 
+        city, month, day = Check_User_Input() 
         print('-'*40)
     except Exception as e:
         print("Exception occurred: {}".format(e))
         
     return city, month, day
+
+def Check_User_Input():
+    while True:
+        print()
+        city=input('Enter exactly city from the following [chicago, new york city, washington] :\n').lower()
+        if city in valid_user_input['city']:
+            break
+    
+         # get user input for month (all, january, february, ... , june)
+    while True:
+         print()
+         month=input('In which month do you want to analyse data [all, january, february,  march, april ,may, june] :\n').lower()
+         if month in valid_user_input['month']:
+             break
+    
+         # get user input for day of week (all, monday, tuesday, ... sunday)
+    while True:
+        print()
+        day=input('In which day of week do you want to analyse data [all, monday, tuesday, wednesday,thursday,friday,saturday,sunday]\n').lower()
+        if day in valid_user_input['day']:
+            break
+    return city,month,day
 
 
 def load_data(city, month, day):
