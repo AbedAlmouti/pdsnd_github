@@ -22,4 +22,15 @@ In this project, you will make use of Python to explore data related to bike sha
 * Python core libraries, Panads, Numpy.
 * OS like Windows, Mac, Unix 
 
+### Executing program
+
+* OS should have python core and interpreter
+* csv files in same **bikeshare.py** directory
+
+## Help
+
+Any advise for common problems or issues.
+```
+message through Github https://github.com/AbedAlmouti
+```
 
